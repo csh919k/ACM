@@ -13,22 +13,11 @@ terraform {
       name = "acm"
     }
   }
-
-  # cloud {
-  #   organization = "MZC-ORG"
-
-  #   workspaces {
-  #     name = "test"
-  #   }
-  # }
 }
-
-
 
 provider "aws" {
   region = "ap-northeast-2"
 }
-
 
 data "aws_ami" "ubuntu" {
   most_recent = true
