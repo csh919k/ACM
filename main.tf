@@ -41,7 +41,7 @@ resource "aws_instance" "web" {
 
   tags = {
     Name = "HelloWorld"
-    Env  = "Dev"
+    Env  = "Stage"
     Test = "1"
   }
 }
